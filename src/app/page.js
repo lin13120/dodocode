@@ -19,7 +19,7 @@ export default function Home() {
     fetch("/leetcode.json")
       .then((r) => r.json())
       .then((data) => {
-        const today = formatDate(new Date(), "Asia/Shanghai");
+        const today = formatDate(new Date(), "America/Los_Angeles");
         const problems = data?.[today]?.problems ?? null;
         setState({ date: today, problems });
       });
