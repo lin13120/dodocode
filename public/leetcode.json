@@ -1,0 +1,18 @@
+{
+  "2025-09-21": {
+    "problems": [
+      {
+        "title": "Two Sum",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "difficulty": "easy",
+        "labels": ["array", "hash-table"]
+      },
+      {
+        "title": "Add Two Numbers",
+        "link": "https://leetcode.com/problems/add-two-numbers/",
+        "difficulty": "medium",
+        "labels": ["linked-list", "math"]
+      }
+    ]
+  }
+}
