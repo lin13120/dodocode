@@ -33,5 +33,40 @@
         "labels": ["linked-list"]
       }
     ]
+  },
+    "2025-09-22": {
+    "problems": [
+      {
+        "title": "Palindrome Linked List",
+        "link": "https://leetcode.com/problems/palindrome-linked-list/",
+        "difficulty": "easy",
+        "labels": ["linked-list"]
+      },
+      {
+        "title": "Add Two Numbers II",
+        "link": "https://leetcode.com/problems/add-two-numbers-ii/",
+        "difficulty": "medium",
+        "labels": ["linked-list"]
+      },
+      {
+        "title": "Remove Nth Node From End of List",
+        "link": "https://leetcode.com/problems/design-linked-list/",
+        "difficulty": "medium",
+        "labels": ["linked-list"]
+      },
+      {
+        "title": "Merge In Between Linked Lists",
+        "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+        "difficulty": "medium",
+        "labels": ["linked-list","思维挑战"]
+      },
+
+      {
+        "title": "Circular Array Loop",
+        "link": "https://leetcode.com/problems/lru-cache/",
+        "difficulty": "medium",
+        "labels": ["linked-list","难，但面试遇到过"]
+      }
+    ]
   }
 }
