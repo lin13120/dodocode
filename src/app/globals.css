@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.color-empty { @apply fill-gray-200; }
+.color-scale-1 { @apply fill-green-200; }
+.color-scale-2 { @apply fill-green-400; }
+.color-scale-3 { @apply fill-green-600; }
+.color-scale-4 { @apply fill-green-800; }
+.react-calendar-heatmap-month-label {
+  font-size: 10px; /* 自己想要的大小 */
+}

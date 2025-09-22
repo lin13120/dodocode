@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import CalendarHeatmap from "react-calendar-heatmap";
+
 
 export default function Home() {
   const [state, setState] = useState({ date: "", problems: null });
@@ -28,6 +30,7 @@ export default function Home() {
   if (!state.problems) {
     return (
       <main className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <Calendar />
         <div className="text-gray-600">今天（{state.date || "…"}）没有配置题目</div>
       </main>
     );
@@ -49,6 +52,8 @@ export default function Home() {
           </div>
         </header>
 
+      <Calendar />
+
         {/* 题目列表 */}
         <ul className="grid gap-4">
           {state.problems.map((p, idx) => (
@@ -60,6 +65,24 @@ export default function Home() {
       </div>
     </main>
   );
+}
+
+
+function Calendar(){
+  return(<div className=" p-7">
+  <CalendarHeatmap
+    startDate={new Date('2024-12-31')}
+    endDate={new Date('2025-12-31')}
+    values={[
+      { date: '2025-09-21', count: 2 },
+      { date: '2025-09-22', count: 2 },
+    ]}
+    classForValue={value => {
+      if (!value) return 'color-empty';
+      return `color-scale-${value.count}`;
+    }}
+  />
+</div>)
 }
 
 function ProblemCard({ problem, index }) {
